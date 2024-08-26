@@ -1,0 +1,50 @@
+Diferença - 1007
+
+import 'dart:io';
+
+void main()
+{
+int A = int.parse(stdin.readLineSync()!);
+  int B = int.parse(stdin.readLineSync()!);
+  int C = int.parse(stdin.readLineSync()!);
+  int D = int.parse(stdin.readLineSync()!);
+
+  int diferenca = (A * B) - (C * D);
+
+  print('DIFERENCA = $diferenca');
+}
+
+
+1002 - Área do Círculo
+import 'dart:io';
+
+void main() {
+  const double pi = 3.14159;
+
+  double raio = double.parse(stdin.readLineSync()!);
+
+  double area = pi * raio * raio;
+
+  print('A=${area.toStringAsFixed(4)}');
+}
+
+
+1044 - Múltiplos
+import 'dart:io';
+
+void main() {
+
+  String linha = stdin.readLineSync()!;
+  
+
+  List<String> partes = linha.split(' ');
+
+  int A = int.parse(partes[0]);
+  int B = int.parse(partes[1]);
+
+  if (A % B == 0 || B % A == 0) {
+    print('Sao Multiplos');
+  } else {
+    print('Nao sao Multiplos');
+  }
+}

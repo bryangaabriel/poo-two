@@ -1,0 +1,12 @@
+void main() {
+  String nome = 'Bryan';
+  String sobrenome = 'Silva';
+
+  int idade = 30;
+
+  bool isAtivo = true;
+
+  String nomeCompleto = '$nome $sobrenome';
+
+  print('Meu nome completo é: $nomeCompleto');
+}
